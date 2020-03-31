@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <p>Something to play with</p>
+            <section>
+                <label for="leftpanel">Adjust Right Panel <input name="leftpanel" type="range"></label>
+                <label for="rightpanel">Adjust Right Panel <input type="range"></label>
+                <label for="color">Panel Color <input name="color" type="color"></label>
+            </section>
+    </header>
+    <div class="container">
+        <label for="search">Search <input name='search' id="time" type="search"></label>
+        <label for="image">select image <input name="image" type="file"></label>
+        <label for="rate"rate>rate <select name="rate" id="">
+                <option value='1'>1</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5</option>
+        </select></label>
+        <button class="item">add object</button>
+    </div>
+    <div id='inline-container'>
+        <div id="leftpane"></div>
+        <div id="rightpane">
+            <div id='display'></div>
+        </div>
+    </div>
+    
+</body>
+</html>
