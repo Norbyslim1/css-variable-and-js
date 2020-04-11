@@ -57,16 +57,19 @@ section{
     transform: scaleX(var(--left));
     background-color: var(--color);
 }
-/* #rightpane{
+#rightpane{
     background-color: var(--color);
     display: inline-block;
     border: 1.5px solid black;
     width: 48.6%;
     height: 100%;
     transform-origin: right center 0px;
-    transform: scaleX(var(--right));
-    
-} */
+    transform: scaleX(var(--right));   
+}
+.withdraw{
+    transform: scaleX(0.3) !important;
+    transition: all 2.7s;
+}
 
 
 
