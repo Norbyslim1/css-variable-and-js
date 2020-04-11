@@ -14,7 +14,6 @@ $(function(){
         }
     }
     function retract (event){
-        console.log('in withdraw');
         var reel= URL.createObjectURL(event.target.files[0]);
         $('#block-container').fadeIn('fast').css('background-image', 'url('+reel+')');
         $('#leftpane').addClass('withdraw');
