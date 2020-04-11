@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
             <p>Something to play with</p>
             <section>
-                <label for="leftpanel">Adjust Right Panel <input name="leftpanel" type="range"></label>
-                <label for="rightpanel">Adjust Right Panel <input type="range"></label>
+                <label for="leftpanel">Adjust Left Panel <input name="leftpanel" min="0" max="5" type="range"></label>
+                <label for="rightpanel">Adjust Right Panel <input name='rightpanel' min="0" max="5" type="range"></label>
                 <label for="color">Panel Color <input name="color" type="color"></label>
             </section>
     </header>
     <div class="container">
         <label for="search">Search <input name='search' id="time" type="search"></label>
-        <label for="image">select image <input name="image" type="file"></label>
+        <label for="image">select image <input name="image" id='file' type="file"></label>
         <label for="rate"rate>rate <select name="rate" id="">
                 <option value='1'>1</option>
                 <option value= '2'>2</option>
@@ -29,12 +30,11 @@
         </select></label>
         <button class="item">add object</button>
     </div>
-    <div id='inline-container'>
+    <div id='block-container'>
         <div id="leftpane"></div>
-        <div id="rightpane">
-            <div id='display'></div>
-        </div>
+        <div id="rightpane"></div>
     </div>
+    <img src="" alt="image">
     
 </body>
 </html>

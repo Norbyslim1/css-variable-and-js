@@ -1,3 +1,10 @@
+:root{
+    --left:1.0;
+    --right:1.02;
+    --color: red;
+
+
+}
 body{
     height: 100vh;
     width: 90rem;
@@ -21,11 +28,46 @@ section{
 }
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px solid black;
     height: 5%;
     width: 90rem;
     padding-top: 1%;
-    padding-left: 4%;
-    margin-top: 5%; 
+    padding-right: 2%;
+    padding-left: 0%;
+    margin-top: 5%;
+ 
 }
+#block-container{
+    position: relative;
+    border: 3px solid green;
+    height: 40%;
+    width: 25%;
+    left: 50%;
+    top: 20%;
+    padding: 0%;
+    background-size: cover;
+}
+#leftpane{
+    border: 1.5px solid black;
+    width: 48.6%;
+    height: 100%;
+    display: inline-block;
+    transform-origin: left center 0px;
+    transform: scaleX(var(--left));
+    background-color: var(--color);
+}
+/* #rightpane{
+    background-color: var(--color);
+    display: inline-block;
+    border: 1.5px solid black;
+    width: 48.6%;
+    height: 100%;
+    transform-origin: right center 0px;
+    transform: scaleX(var(--right));
+    
+} */
+
+
+
+/* 1.012 */
