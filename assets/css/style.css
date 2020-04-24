@@ -70,7 +70,15 @@ section{
     transform: scaleX(0.3) !important;
     transition: all 2.7s;
 }
-
-
+.closeLeft{
+    width: 48.6%;
+    transform: scaleX(var(--left));
+    transition: all 2.0s;
+}
+.closeRight{
+    width: 48.6%;
+    transform: scaleX(var(--right));
+    transition: all 2.0s;
+}
 
 /* 1.012 */
