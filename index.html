@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media='screen and (max-width:768px)' href="assets/css/mobile.css">
     <script src="assets/js/script.js"></script>
     <title>Document</title>
 </head>
@@ -13,15 +14,15 @@
     <header>
             <p>Something to play with</p>
             <section>
-                <label for="leftpanel">Adjust Left Panel <input name="leftpanel" id='leftpanel' min="0" max="5" step="1" type="range"></label>
+                <label for="leftpanel">Adjust Left Panel <input name="leftpanel" id='leftpanel' min="0" max="5.1" step="1" type="range"></label>
                 <label for="rightpanel">Adjust Right Panel <input name='rightpanel' id='rightpanel' min="0" max="5.1" step="1.02" type="range"></label>
                 <label for="color">Panel Color <input name="color" id='palette' type="color"></label>
             </section>
     </header>
     <div class="container">
-        <label for="search">Search <input name='search' id="time" type="search"></label>
+        <label for="search">Search <input name='search' id="search" type="search"></label>
         <label for="image">select image <input name="image" id='file' type="file"></label>
-        <label for="rate"rate>rate <select name="rate" id="">
+        <label for="rate"rate>rate <select name="rate" id="rate">
                 <option value='1'>1</option>
                 <option value= '2'>2</option>
                 <option value= '3'>3</option>

@@ -1,5 +1,5 @@
 $(function(){
-    $('#leftpanel').val('5');
+    $('#leftpanel').val('5.1');
     $('#rightpanel').val('5.1');
     $('#file').on('change', retract);
     $('#file').on('click', close);
@@ -13,14 +13,14 @@ $(function(){
         }else{
             $('#leftpane').removeClass('withdraw');
             $('#rightpane').removeClass('withdraw');
-            $(':root').css('--left','1.0');
+            $(':root').css('--left','1.02');
             $(':root').css('--right','1.02');
             $('#leftpane').addClass('closeLeft');
             $('#rightpane').addClass('closeRight');
             var player= document.getElementById('bang');
             player.currentTime=0;
             player.play();
-            $('#leftpanel').val('5');
+            $('#leftpanel').val('5.1');
             $('#rightpanel').val('5.1');
         }
     }
@@ -33,9 +33,9 @@ $(function(){
     function close(e){
         $('#leftpane').removeClass('withdraw');
         $('#rightpane').removeClass('withdraw');
-        $(':root').css('--left','1.0');
+        $(':root').css('--left','1.02');
         $(':root').css('--right','1.02');
-        $('#leftpanel').val('5');
+        $('#leftpanel').val('5.1');
         $('#rightpanel').val('5.1');
     }
     function leftmove(e){

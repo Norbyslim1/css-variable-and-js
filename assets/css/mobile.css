@@ -18,37 +18,66 @@ body{
 }
 header{
     width: 100%;
-    height: 10%;
+    height: 20%;
 
 }
 p{
     text-align: center;
     font-size: 24px;
 }
+label{
+    font-size: 20px;
+}
 section{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    height: 80%;
+}
+#leftpanel{
+    height: 33%;
+    width: 45%;
+}
+#rightpanel{
+    height: 33%;
+    width: 45%;
+}
+#palette{
+    height: 33%;
+    width: 10%;
 }
 .container{
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    height: 5%;
+    display: block;
+    border: none;
+    height: 20%;
     width: 100%;
-    padding-top: 1%;
-    padding-right: 2%;
-    padding-left: 0%;
+    padding: 1%;
     margin-top: 5%;
- 
+}
+#search{
+    display: block;
+    margin: 2%;
+}
+#file{
+    display: block;
+    margin: 2%;
+}
+#rate{
+    display: inline;
+    margin: 2%;
+}
+button{
+    display: inline;
+    margin: 2%;
 }
 #block-container{
     position: relative;
     border: 3px solid green;
     height: 40%;
-    width: 25%;
-    left: 50%;
-    top: 20%;
+    width: 85%;
+    left: 4%;
+    top: 10%;
     padding: 0%;
     background-size: cover;
 }
